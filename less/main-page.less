@@ -1,0 +1,31 @@
+.home {
+    .banner{
+        
+        img{
+            display: block;
+            max-width: 100%;
+            margin: 10vh auto;
+        }
+    }
+    .side-by-side{
+        margin: 5vh 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        .text-box{
+            max-width: 50%;
+            padding: 5%;
+            background-color: fade(@text-bg, 5%);
+            &:hover{
+                background-color: fade(@text-bg, 40%);
+            }
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        img{
+            max-width: 40%;
+        }
+    }
+}// home
