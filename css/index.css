@@ -172,13 +172,13 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  overflow: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 1%;
   flex-flow: row nowrap;
   color: black;
-  background-color: rgba(119, 136, 153, 0.9);
+  background-color: rgba(175, 238, 238, 0.9);
 }
 nav:hover {
   opacity: 1;
@@ -186,8 +186,10 @@ nav:hover {
 nav .navbar {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 1%;
+  flex-flow: row nowrap;
 }
 nav .navbar a {
   padding: 1%;
@@ -197,6 +199,15 @@ nav .navbar a {
 }
 nav .navbar a:hover {
   color: darkblue;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  nav .navbar {
+    width: 100%;
+  }
 }
 .home .banner img {
   display: block;
@@ -247,4 +258,27 @@ nav .navbar a:hover {
   .home .side-by-side .text-box:hover {
     background-color: rgba(245, 245, 245, 0.8);
   }
+}
+footer {
+  width: 100%;
+  color: black;
+  background-color: rgba(175, 238, 238, 0.9);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  flex-flow: row nowrap;
+}
+footer .signin {
+  width: 40%;
+}
+footer .signin a {
+  padding: 1%;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+footer .signin a:hover {
+  color: darkblue;
 }
