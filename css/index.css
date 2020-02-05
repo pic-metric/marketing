@@ -189,6 +189,11 @@ nav {
 nav:hover {
   background-color: rgba(175, 238, 238, 0.8);
 }
+@media (max-width: 800px) {
+  nav {
+    background-color: rgba(245, 245, 245, 0.5);
+  }
+}
 nav:hover {
   opacity: 1;
 }
@@ -243,7 +248,7 @@ nav .navbar a:hover {
 }
 @media (max-width: 800px) {
   .home .side-by-side .text-box {
-    background-color: rgba(245, 245, 245, 0.3);
+    background-color: rgba(245, 245, 245, 0.5);
   }
   .home .side-by-side .text-box:hover {
     background-color: rgba(245, 245, 245, 0.8);
@@ -285,6 +290,11 @@ footer {
 }
 footer:hover {
   background-color: rgba(175, 238, 238, 0.8);
+}
+@media (max-width: 800px) {
+  footer {
+    background-color: rgba(245, 245, 245, 0.5);
+  }
 }
 footer .signin {
   width: 40%;
