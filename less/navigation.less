@@ -1,12 +1,12 @@
 // Navigation code here
-nav {
+nav { // sticky positioning for navigation
     z-index: 2;
     position: sticky;
     top: 0;
     width: 100%;
     .centered-text();
     color: @header-font-color;
-    background-color: fade(@nav-bg, 90%);
+    .bar-bg();
     &:hover {
         opacity: 1;
     }
@@ -17,9 +17,8 @@ nav {
             .navlinks();
         }
     }
-    @media @phone{
+    @media @phone{ // For mobile view only, links stack below title
         flex-flow: column nowrap;
-        align-items: center;
         .navbar{
             width: 100%;
         }

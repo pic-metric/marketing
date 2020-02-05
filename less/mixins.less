@@ -1,4 +1,4 @@
-.centered-text(){
+.centered-text(){ // Centers items vertically and in row, but space-between horizontally
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,12 +6,32 @@
     flex-flow: row nowrap;
 }
 
-.navlinks(){
+.navlinks(){ // Applies styles to links in navbar and footer
     padding: 1%;
     font-size: 1.6rem;
     text-decoration: none;
     color: @header-font-color;
     &:hover {
         color: @nav-hover-color;
+    }
+}
+
+.bar-bg(){ // heater and footer bars have lower opacity until hover-over
+    background-color: fade(@nav-bg, 40%);
+    &:hover{
+        background-color: fade(@nav-bg, 80%);
+    }
+}
+
+.text-bg-fade(){ // controls default and hover opacity for text background
+    background-color: fade(@text-bg, 25%);
+    &:hover {
+      background-color: fade(@text-bg, 65%);
+    }
+    @media @tablet{ // higher opacity when text is in front of images
+        background-color: fade(@text-bg, 30%);
+        &:hover {
+          background-color: fade(@text-bg, 80%);
+        }
     }
 }

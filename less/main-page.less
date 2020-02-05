@@ -6,47 +6,42 @@
       margin: 10vh auto;
     }
   }
-  .side-by-side {
+  // style for side-by-side display of img + text-box,
+  // stacking text in front of image for tablet and mobile views:
+  .side-by-side { 
     margin: 5vh 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    .text-box {
+    align-items: center;
+    .text-box { // style for h2 + text in box with transparent background
       max-width: 50%;
       padding: 5%;
-      background-color: fade(@text-bg, 5%);
-      &:hover {
-        background-color: fade(@text-bg, 40%);
-      }
+      .text-bg-fade();
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-around;
       align-items: center;
     }
-    img {
+    img { // Control image sizing for window/device size scaling
       max-width: 45%;
-      max-height: 30%;
+      max-height: auto;
     }
-    @media @tablet {
+    @media @tablet { // Floats text in front of images for tablet and mobile views
       position: relative;
       img {
         max-width: 100%;
         max-height: 100%;
-        max-width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      .text-box {
+      .text-box { // makes text box full-width for tablet and mobile
         border: 1px dotted @main-font-color;
-        z-index: 1;
+        z-index: 1; // keeps text in front of image for tablet and mobile views
         max-height: 100%;
         max-width: 100%;
-        background-color: fade(@text-bg, 30%);
-        &:hover {
-          background-color: fade(@text-bg, 80%);
-        }
       }
     }
   }
