@@ -1,0 +1,27 @@
+// Navigation code here
+nav {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    .centered-text();
+    color: @header-font-color;
+    background-color: fade(@nav-bg, 90%);
+    &:hover {
+        opacity: 1;
+    }
+    .navbar {
+        width: 50%;
+        .centered-text();
+        a {
+            .navlinks();
+        }
+    }
+    @media @phone{
+        flex-flow: column nowrap;
+        align-items: center;
+        .navbar{
+            width: 100%;
+        }
+    }
+}

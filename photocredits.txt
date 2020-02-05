@@ -1,0 +1,12 @@
+green blur Artur Łuczka 
+turquoise blur, light bokeh Sharon McCutcheon 
+floating camera Andrik Langfield
+handshake bantersnaps
+railway  Seth Doyle
+green wall  Tam Nguyen
+pedestrians Matt Quinn
+coding Mimi Thian
+cameras Christian Mackie 
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
