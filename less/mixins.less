@@ -21,6 +21,9 @@
     &:hover{
         background-color: fade(@nav-bg, 80%);
     }
+    @media @tablet{ // higher opacity for tablet/mobile
+        background-color: fade(@text-bg, 50%);
+    }
 }
 
 .text-bg-fade(){ // controls default and hover opacity for text background
@@ -28,8 +31,8 @@
     &:hover {
       background-color: fade(@text-bg, 65%);
     }
-    @media @tablet{ // higher opacity when text is in front of images
-        background-color: fade(@text-bg, 30%);
+    @media @tablet{ // higher opacity when text is in front of images (may lack hover)
+        background-color: fade(@text-bg, 50%);
         &:hover {
           background-color: fade(@text-bg, 80%);
         }
